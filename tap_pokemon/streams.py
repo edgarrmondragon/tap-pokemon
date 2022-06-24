@@ -24,7 +24,7 @@ class _PokemonSpeciesEndpoint(_Endpoint):
 class PokemonSpecies(PokemonStream):
     """Pokémon stream class."""
 
-    name = "__pokemon_species"
+    name = "pokemon_species"
     path = "/api/v2/pokemon-species"
     primary_keys = ["id"]
 
