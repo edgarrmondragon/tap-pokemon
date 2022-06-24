@@ -4,6 +4,8 @@ Singer tap for Pokémon.
 
 Built with the [Meltano SDK](https://sdk.meltano.com) for Singer Taps and Targets.
 
+🚧 Under development. Not all endpoints have been implemented. See [API Coverage](#api-coverage). 🚧
+
 ## Capabilities
 
 * `catalog`
@@ -15,15 +17,21 @@ Built with the [Meltano SDK](https://sdk.meltano.com) for Singer Taps and Target
 
 ## Settings
 
-| Setting             | Required | Default | Description |
-|:--------------------|:--------:|:-------:|:------------|
-| base_url            | False    | https://pokeapi.co | The base URL of the Pokémon API. |
-| stream_maps         | False    | None    | Config object for stream maps capability. |
-| stream_map_config   | False    | None    | User-defined config values to be used within map expressions. |
-| flattening_enabled  | False    | None    | 'True' to enable schema flattening and automatically expand nested properties. |
-| flattening_max_depth| False    | None    | The max depth to flatten schemas. |
+| Setting              | Required | Default            | Description                                                                    |
+|:-------------------- |:--------:|:------------------:|:------------------------------------------------------------------------------ |
+| base_url             | False    | https://pokeapi.co | The base URL of the Pokémon API.                                               |
+| stream_maps          | False    | None               | Config object for stream maps capability.                                      |
+| stream_map_config    | False    | None               | User-defined config values to be used within map expressions.                  |
+| flattening_enabled   | False    | None               | 'True' to enable schema flattening and automatically expand nested properties. |
+| flattening_max_depth | False    | None               | The max depth to flatten schemas.                                              |
 
 A full list of supported settings and capabilities is available by running: `tap-pokemon --about`
+
+## API Coverage
+
+| Stream            | Endpoint                  |
+| ----------------- | ------------------------- |
+| `pokemon_species` | `/api/v2/pokemon-species` |
 
 ## Usage
 
