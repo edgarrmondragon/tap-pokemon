@@ -1,0 +1,25 @@
+version: 1
+send_anonymous_usage_stats: false
+project_id: tap-pokemon
+plugins:
+  extractors:
+  - name: tap-pokemon
+    label: Pokemon
+    namespace: pokemon
+    description: The Pokémon API
+    repository: https://github.com/edgarrmondragon/tap-pokemon
+    docs: https://github.com/edgarrmondragon/tap-pokemon#readme
+    pip_url: -e .
+    capabilities:
+    - state
+    - catalog
+    - discover
+    settings:
+    - name: base_url
+      description: The base URL of the Pokémon API
+      kind: string
+      value: "https://pokeapi.co"
+  loaders:
+  - name: target-jsonl
+    variant: andyh1203
+    pip_url: target-jsonl
