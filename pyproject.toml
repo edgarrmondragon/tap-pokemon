@@ -24,7 +24,7 @@ black = "^22.6.0"
 isort = "^5.10.1"
 mypy = ">=0.950"
 pytest = "^7.1.2"
-pyupgrade = "^2.37.1"
+pyupgrade = "^2.37.2"
 types-requests = "^2.28.2"
 
 # Flake8
