@@ -746,7 +746,7 @@ python-versions = ">=3.6"
 
 [[package]]
 name = "types-requests"
-version = "2.28.10"
+version = "2.28.11"
 description = "Typing stubs for requests"
 category = "dev"
 optional = false
@@ -810,7 +810,7 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=6)", "pytest-black (>=
 [metadata]
 lock-version = "1.1"
 python-versions = "<3.11,>=3.7.1"
-content-hash = "861e8e7eb4ef0251f90db903fc82d3b69380eebd8789b3d6682d7c354ae1a444"
+content-hash = "676d4569d50c3e1b6dd82c60c16a4c9f95900b8d53c46e9f57663936a6c6729c"
 
 [metadata.files]
 appdirs = [
@@ -1237,14 +1237,6 @@ simplejson = [
     {file = "simplejson-3.11.1-cp35-cp35m-win32.whl", hash = "sha256:11d91b88cc1e9645c79f0f6fd2961684249af963e2bbff5a00061ed4bbf55379"},
     {file = "simplejson-3.11.1-cp35-cp35m-win_amd64.whl", hash = "sha256:36b0de42e3a8a51086c339cc803f6ac7a9d1d5254066d680956a195ca12cf0d8"},
     {file = "simplejson-3.11.1.tar.gz", hash = "sha256:01a22d49ddd9a168b136f26cac87d9a335660ce07aa5c630b8e3607d6f4325e7"},
-    {file = "simplejson-3.11.1.win-amd64-py2.7.exe", hash = "sha256:1975e6b621fe1c2b9321c56476e8ebe1b851006517c1d67041b378950374694c"},
-    {file = "simplejson-3.11.1.win-amd64-py3.3.exe", hash = "sha256:f60f01b16215568a08611eb6a4d61d76c4173c3d69aac9cad593777056c284d5"},
-    {file = "simplejson-3.11.1.win-amd64-py3.4.exe", hash = "sha256:6be48181337ac5f5d9f48c9c504f317e245519318992122a05c40e482a721d59"},
-    {file = "simplejson-3.11.1.win-amd64-py3.5.exe", hash = "sha256:8ae8cdcbe49e29ddfdae0ab81c1f6c070706d18fcee86371352d0d54b47ad8ec"},
-    {file = "simplejson-3.11.1.win32-py2.7.exe", hash = "sha256:ebbd52b59948350ad66205e66b299fcca0e0821ed275c21262c522f4a6cea9d2"},
-    {file = "simplejson-3.11.1.win32-py3.3.exe", hash = "sha256:2dc7fb8c0c0ff9483ce31b93b700b1fa60aca9d099e6aca9813f28ff131ccf59"},
-    {file = "simplejson-3.11.1.win32-py3.4.exe", hash = "sha256:97cc43ef4cb18a2725f6e26d22b96f8ca50872a195bde32707dcb284f89c1d4d"},
-    {file = "simplejson-3.11.1.win32-py3.5.exe", hash = "sha256:c76d55d78dc8b06c96fd08c6cc5e2b0b650799627d3f9ca4ad23f40db72d5f6d"},
 ]
 singer-sdk = [
     {file = "singer-sdk-0.10.0.tar.gz", hash = "sha256:347b34d37541cd55678af3e574807c45b539cd538a91f28f36e0c0c51676098d"},
@@ -1330,8 +1322,8 @@ typed-ast = [
     {file = "typed_ast-1.5.4.tar.gz", hash = "sha256:39e21ceb7388e4bb37f4c679d72707ed46c2fbf2a5609b8b8ebc4b067d977df2"},
 ]
 types-requests = [
-    {file = "types-requests-2.28.10.tar.gz", hash = "sha256:97d8f40aa1ffe1e58c3726c77d63c182daea9a72d9f1fa2cafdea756b2a19f2c"},
-    {file = "types_requests-2.28.10-py3-none-any.whl", hash = "sha256:45b485725ed58752f2b23461252f1c1ad9205b884a1e35f786bb295525a3e16a"},
+    {file = "types-requests-2.28.11.tar.gz", hash = "sha256:7ee827eb8ce611b02b5117cfec5da6455365b6a575f5e3ff19f655ba603e6b4e"},
+    {file = "types_requests-2.28.11-py3-none-any.whl", hash = "sha256:af5f55e803cabcfb836dad752bd6d8a0fc8ef1cd84243061c0e27dee04ccf4fd"},
 ]
 types-urllib3 = [
     {file = "types-urllib3-1.26.15.tar.gz", hash = "sha256:c89283541ef92e344b7f59f83ea9b5a295b16366ceee3f25ecfc5593c79f794e"},
