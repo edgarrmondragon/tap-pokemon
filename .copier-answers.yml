@@ -1,0 +1,20 @@
+# Changes here will be overwritten by Copier
+_commit: 0.0.7
+_src_path: gh:edgarrmondragon/singer-tap-copier-template
+author_email: edgarrm358@gmail.com
+author_fullname: Edgar Ramírez-Mondragón
+author_username: edgarrmondragon
+python_main_version: '3.10'
+repository_name: tap-pokemon
+repository_namespace: edgarrmondragon
+repository_provider: github.com
+tap_auth_method: Custom or N/A
+tap_id: tap-pokemon
+tap_package_command_line_name: tap-pokemon
+tap_package_distribution_name: tap-pokemon
+tap_package_import_name: tap_pokemon
+tap_source_description: The Pokémon API
+tap_source_id: Pokemon
+tap_source_name: Pokemon
+tap_stream_type: REST
+vscode_files: true
