@@ -15,23 +15,12 @@ repository = "https://github.com/edgarrmondragon/tap-pokemon"
 documentation = "https://github.com/edgarrmondragon/tap-pokemon#readme"
 
 [tool.poetry.dependencies]
-python = "<3.11,>=3.7.1"
-singer-sdk = "0.13.0"
+python = "<3.12,>=3.7.1"
+singer-sdk = "0.16.0"
 requests-cache = "^0.9.7"
 
 [tool.poetry.dev-dependencies]
-black = "^22.10.0"
-isort = "^5.10.1"
-mypy = ">=0.950"
 pytest = "^7.2.0"
-pyupgrade = "^3.2.0"
-types-requests = "^2.28.11"
-
-# Flake8
-darglint = "^1.8.1"
-flake8 = "^5.0.4"
-flake8-annotations = "^2.9.1"
-flake8-docstrings = "^1.6.0"
 
 [tool.isort]
 profile = "black"
