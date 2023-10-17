@@ -12,6 +12,7 @@ updates:
       time: "23:03"
     reviewers:
       - "edgarrmondragon"
+    versioning-strategy: increase-if-necessary
   - package-ecosystem: pip
     directory: "/.github/workflows"
     schedule:
