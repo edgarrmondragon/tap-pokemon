@@ -28,12 +28,12 @@ jobs:
 
     - name: Install Poetry
       run: |
-        pipx install poetry --python python${{ matrix.python-version }}
+        pipx install poetry --python "python${{ matrix.python-version }}"
         poetry --version
 
     - name: Install tox
       run: |
-        pipx install tox
+        pipx install tox --python "python${{ matrix.python-version }}"
         tox --version
 
     - name: Run tests with Tox
