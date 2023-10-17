@@ -10,7 +10,7 @@ jobs:
       PIP_CONSTRAINT: .github/workflows/constraints.txt
     strategy:
       matrix:
-        python-version: ["3.7", "3.8", "3.9", "3.10", "3.11"]
+        python-version: ["3.8", "3.9", "3.10", "3.11"]
 
     steps:
     - name: Checkout code
@@ -28,7 +28,7 @@ jobs:
 
     - name: Install Poetry
       run: |
-        pipx install poetry
+        pipx install poetry --python python${{ matrix.python-version }}
         poetry --version
 
     - name: Install tox
