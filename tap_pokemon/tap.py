@@ -2,14 +2,16 @@
 
 from __future__ import annotations
 
-from typing import Any
+import typing as t
 
 from requests_cache import install_cache
 from singer_sdk import Stream, Tap
 from singer_sdk import typing as th
-from singer_sdk.streams import RESTStream
 
 from tap_pokemon.streams import PokemonSpecies
+
+if t.TYPE_CHECKING:
+    from singer_sdk.streams import RESTStream
 
 STREAM_TYPES: list[type[RESTStream]] = [
     PokemonSpecies,
@@ -30,7 +32,7 @@ class TapPokemon(Tap):
         ),
     ).to_dict()
 
-    def __init__(self, *args: Any, **kwargs: Any) -> None:
+    def __init__(self, *args: t.Any, **kwargs: t.Any) -> None:
         """Initialize the tap.
 
         Args:
