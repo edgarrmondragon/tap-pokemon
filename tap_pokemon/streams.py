@@ -11,7 +11,7 @@ class _Endpoint(PokemonStream):
     """Base class for side endpoints."""
 
     name = "__dummy__"
-    schema: dict = {"properties": {}}
+    schema: dict = {"properties": {}}  # noqa: RUF012
 
 
 class _PokemonSpeciesEndpoint(_Endpoint):
@@ -26,7 +26,7 @@ class PokemonSpecies(PokemonStream):
 
     name = "pokemon_species"
     path = "/api/v2/pokemon-species"
-    primary_keys = ["id"]
+    primary_keys = ("id",)
 
     schema = th.PropertiesList(
         th.Property(
@@ -49,7 +49,7 @@ class PokemonSpecies(PokemonStream):
         ),
     ).to_dict()
 
-    def post_process(self, row: dict, context: dict | None = None) -> dict | None:
+    def post_process(self, row: dict, context: dict | None = None) -> dict | None:  # noqa: ARG002
         """Post-process a row.
 
         Args:

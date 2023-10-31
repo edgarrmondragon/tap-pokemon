@@ -12,7 +12,7 @@ class PokemonStream(RESTStream):
     """Pokemon stream class."""
 
     records_jsonpath = "$.results[*]"
-    next_page_token_jsonpath = "$.next"
+    next_page_token_jsonpath = "$.next"  # noqa: S105
 
     @property
     def url_base(self) -> str:
@@ -30,13 +30,11 @@ class PokemonStream(RESTStream):
         Returns:
             A dictionary of HTTP headers.
         """
-        headers = {}
-        headers["User-Agent"] = f"{self.tap_name}/{self._tap.plugin_version}"
-        return headers
+        return {"User-Agent": f"{self.tap_name}/{self._tap.plugin_version}"}
 
     def get_url_params(
         self,
-        context: dict | None,
+        context: dict | None,  # noqa: ARG002
         next_page_token: str | None,
     ) -> dict[str, Any]:
         """Get URL query parameters.
