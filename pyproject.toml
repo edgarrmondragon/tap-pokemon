@@ -15,9 +15,9 @@ repository = "https://github.com/edgarrmondragon/tap-pokemon"
 documentation = "https://github.com/edgarrmondragon/tap-pokemon#readme"
 
 [tool.poetry.dependencies]
-python = ">=3.8,<4"
-singer-sdk = "~=0.34.0"
-requests-cache = "^1.1.0"
+python = ">=3.8"
+singer-sdk = "~=0.35.0"
+requests-cache = { version = "~=1.1.0", python = "<4" }
 
 [tool.poetry.dev-dependencies]
 pytest = "~=8.0"
@@ -26,7 +26,7 @@ pytest = "~=8.0"
 addopts = "-vvv"
 
 [tool.mypy]
-python_version = "3.10"
+python_version = "3.12"
 warn_unused_configs = true
 
 [[tool.mypy.overrides]]
@@ -34,7 +34,7 @@ ignore_missing_imports = true
 module = ["backoff.*"]
 
 [build-system]
-requires = ["poetry-core>=1,<2"]
+requires = ["poetry-core==1.9"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
