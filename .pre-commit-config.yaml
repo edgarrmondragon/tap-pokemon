@@ -1,9 +1,12 @@
 ci:
-  autofix_prs: false
+  autofix_commit_msg: '[pre-commit.ci] auto fixes'
+  autofix_prs: true
+  autoupdate_schedule: monthly
+  autoupdate_commit_msg: 'chore(deps): pre-commit autoupdate'
 
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.6.0
+  rev: v5.0.0
   hooks:
   - id: check-json
     exclude: "\\.vscode/.*.json"
@@ -13,7 +16,7 @@ repos:
   - id: trailing-whitespace
 
 - repo: https://github.com/astral-sh/ruff-pre-commit
-  rev: v0.6.8
+  rev: v0.6.9
   hooks:
   - id: ruff
     args: [--fix, --exit-non-zero-on-fix, --show-fixes]
@@ -28,6 +31,6 @@ repos:
     - types-requests
 
 - repo: https://github.com/pre-commit/pre-commit
-  rev: v3.8.0
+  rev: v4.0.0
   hooks:
   - id: validate_manifest
