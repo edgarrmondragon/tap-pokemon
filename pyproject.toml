@@ -26,7 +26,6 @@ pytest = "~=8.3"
 addopts = "-vvv"
 
 [tool.mypy]
-python_version = "3.12"
 warn_unused_configs = true
 
 [[tool.mypy.overrides]]
@@ -34,7 +33,7 @@ ignore_missing_imports = true
 module = ["backoff.*"]
 
 [build-system]
-requires = ["poetry-core==1.9.1"]
+requires = ["poetry-core]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
