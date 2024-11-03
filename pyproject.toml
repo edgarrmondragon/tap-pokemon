@@ -15,7 +15,7 @@ repository = "https://github.com/edgarrmondragon/tap-pokemon"
 documentation = "https://github.com/edgarrmondragon/tap-pokemon#readme"
 
 [tool.poetry.dependencies]
-python = ">=3.8"
+python = ">=3.9"
 singer-sdk = "~=0.41.0"
 requests-cache = { version = "~=1.2.0", python = "<4" }
 
@@ -42,7 +42,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.ruff]
 line-length = 88
-target-version = "py38"
+target-version = "py39"
 
 [tool.ruff.lint]
 ignore = [
