@@ -16,7 +16,7 @@ documentation = "https://github.com/edgarrmondragon/tap-pokemon#readme"
 
 [tool.poetry.dependencies]
 python = ">=3.9"
-singer-sdk = "~=0.42.1"
+singer-sdk = "~=0.43.1"
 requests-cache = { version = "~=1.2.0", python = "<4" }
 
 [tool.poetry.dev-dependencies]
