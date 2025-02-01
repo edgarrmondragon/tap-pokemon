@@ -23,7 +23,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4.2.2
-    - uses: actions/setup-python@v5.3.0
+    - uses: actions/setup-python@v5.4.0
       id: setup-python
       with:
         python-version: ${{ matrix.python-version }}
