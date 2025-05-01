@@ -23,12 +23,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4.2.2
-    - uses: actions/setup-python@v5.5.0
+    - uses: actions/setup-python@v5.6.0
       id: setup-python
       with:
         python-version: ${{ matrix.python-version }}
         allow-prereleases: true
-    - uses: astral-sh/setup-uv@v5
+    - uses: astral-sh/setup-uv@v6
       with:
         version: ">=0.4.18"
     - run: uvx tox -e $(echo py${{ matrix.python-version }} | tr -d .)
