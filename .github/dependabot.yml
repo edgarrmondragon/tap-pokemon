@@ -10,8 +10,6 @@ updates:
     schedule:
       interval: monthly
       time: "23:03"
-    reviewers:
-      - "edgarrmondragon"
     versioning-strategy: increase-if-necessary
     groups:
       development-dependencies:
@@ -25,8 +23,6 @@ updates:
     schedule:
       time: "23:03"
       interval: monthly
-    reviewers:
-      - "edgarrmondragon"
     groups:
       ci:
         patterns:
@@ -36,8 +32,6 @@ updates:
     schedule:
       interval: monthly
       time: "23:03"
-    reviewers:
-      - "edgarrmondragon"
     groups:
       actions:
         patterns:
