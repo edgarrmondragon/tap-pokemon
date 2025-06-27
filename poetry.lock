@@ -1047,14 +1047,14 @@ files = [
 
 [[package]]
 name = "singer-sdk"
-version = "0.46.4"
+version = "0.47.4"
 description = "A framework for building Singer taps"
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "singer_sdk-0.46.4-py3-none-any.whl", hash = "sha256:389c5933e5eed1816b0e546d8643b56d65ac3eb8e172db828bc1fd8b1caa0554"},
-    {file = "singer_sdk-0.46.4.tar.gz", hash = "sha256:d3a1044cd48db4d282ef4b41dac27a6cc5ec52a538c8718e4f22f29f9ec79654"},
+    {file = "singer_sdk-0.47.4-py3-none-any.whl", hash = "sha256:9522f92e7c14dc5773bc4d83dee456ad4760869957f718bc053f75c43121107e"},
+    {file = "singer_sdk-0.47.4.tar.gz", hash = "sha256:d70642f2f5d55f794fe3b311ccacabb86a41c3a3bb37260b3119d3aadce0459c"},
 ]
 
 [package.dependencies]
@@ -1320,4 +1320,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.9"
-content-hash = "b5d633858e17d2ac2e66541d6115dc22cfecb285a82e27c9255c4eeb97317ea5"
+content-hash = "acab71b60bbaa611bcd2add2468c44d31fac25881bc55a325f759b1d40351166"
